@@ -1,0 +1,35 @@
+{
+  "name": "marmalade-ng-bridge-dapp",
+  "private": true,
+  "version": "0.1.00",
+  "type": "module",
+  "scripts": {
+    "genversion": "genversion --es6 src/version.js",
+    "dev": "genversion --es6 src/version.js; vite",
+    "build": "genversion --es6 src/version.js; vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "fomantic-ui-css": "^2.9.0",
+    "genversion": "^3.1.1",
+    "marmalade-ng-bridge": "link:../marmalade-ng-bridge",
+    "react": "^18.2.0",
+    "react-cookie": "^7.0.0",
+    "react-dom": "^18.2.0",
+    "react-json-view-lite": "1.2.1",
+    "react-router-dom": "6.21.0",
+    "semantic-ui-react": "2.1.5",
+    "use-local-storage": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.56.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "0.4.5",
+    "vite": "4.5.1"
+  }
+}
