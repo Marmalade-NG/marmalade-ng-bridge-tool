@@ -26,7 +26,7 @@ function FinishForm({account, wallet, bridge})
   const do_reset = () => {_setTrxHash(""); setError(null); setTrxData(null); setTrx(null);}
 
   return  <>
-          <Header textaAlign="center"> Finish X-chain Transaction </Header>
+          <Header textAlign="center"> Finish X-chain Transaction </Header>
           <Segment basic>
           This function is only necessary when something went wrong during a X-chain bridging attempt.
           And you want to recover the locked token.
