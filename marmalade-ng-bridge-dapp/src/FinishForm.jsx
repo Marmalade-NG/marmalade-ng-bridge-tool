@@ -36,7 +36,7 @@ function FinishForm({account, wallet, bridge})
           {trxData && <pre> {JSON.stringify(trxData, null, 2)}</pre>}
 
 
-          <Button primary onClick={gen_transaction} disabled={!account || trx || trxData==null || error!=null}> Generate Transaction </Button>
+          <Button primary onClick={gen_transaction} disabled={!account || trx!=null || trxData==null || error!=null}> Generate Transaction </Button>
           <Button secondary onClick={do_reset}> Reset </Button>
           <Segment>
             <TransactionManager wallet={wallet} trx={trx} k_client={bridge} onSent={()=>null}/>
