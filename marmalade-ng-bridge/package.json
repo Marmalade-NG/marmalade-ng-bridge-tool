@@ -1,7 +1,7 @@
 {
   "name": "marmalade-ng-bridge",
   "private": true,
-  "version": "0.01.00",
+  "version": "0.01.01",
   "type": "module",
   "main": "index.js",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "@kadena/client": "1.7.0",
+    "@kadena/client": "1.8.1",
     "decimal.js": "^10.4.3"
   },
   "devDependencies": {

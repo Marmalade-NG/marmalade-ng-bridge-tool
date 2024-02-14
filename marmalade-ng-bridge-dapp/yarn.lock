@@ -433,21 +433,21 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@kadena/chainweb-node-client@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@kadena/chainweb-node-client/-/chainweb-node-client-0.5.2.tgz#1f17152577687c6515021793dfaa0ffe62bd6135"
-  integrity sha512-YgQ7J0x2ctLTJ2G/OFd07SK+I60H/O2VagvdZik0lcH4ied4qdnYOFev0wsLovrhVntYxDRVKpVQwx5jVZGopg==
+"@kadena/chainweb-node-client@0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@kadena/chainweb-node-client/-/chainweb-node-client-0.5.3.tgz#b936f6823f7b6603de352b66e20135cb49df0fff"
+  integrity sha512-bksjsrKlfDM8xXvTIGnW1oxitEeWzU7s7g112yLgN0xBxo2D6yH1BTpkGJ6SBDYNReTUCvM6KzDZtr7ApwY8tA==
   dependencies:
     "@kadena/cryptography-utils" "0.4.2"
     "@kadena/pactjs" "0.4.2"
     cross-fetch "~3.1.5"
 
-"@kadena/client@1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@kadena/client/-/client-1.7.0.tgz#a34a079c7233b7dbf3520a486aa03bfd3233a809"
-  integrity sha512-GI+Ke80jn4MVO82dRfhX67/y83chNT9tvDJtxyhXsbw1LaNXNHv86dXYEDiPfkec9B+DWUPWb2jgem2Veux8PQ==
+"@kadena/client@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@kadena/client/-/client-1.8.1.tgz#757492e0fbf92ddbf31ddef08684ee492ff4802e"
+  integrity sha512-CFVgsRLyb7OwcPb4k19qjCywCa1iGzRL7Uay6gRnfFUTufX9usqrRiQ6cV4YClqQ/+t3PXpIhQpuNL5V8cW3Og==
   dependencies:
-    "@kadena/chainweb-node-client" "0.5.2"
+    "@kadena/chainweb-node-client" "0.5.3"
     "@kadena/cryptography-utils" "0.4.2"
     "@kadena/pactjs" "0.4.2"
     "@walletconnect/sign-client" "~2.8.1"
