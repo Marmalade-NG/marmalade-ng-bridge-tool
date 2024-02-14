@@ -13,9 +13,6 @@ function FinishForm({account, wallet, bridge})
 
   const [waitingSpv, setWaitingSpv] = useState(false)
 
-  console.log(trxData);
-  console.log(trx);
-
   const setTrxHash = (x) => {_setTrxHash(x); if(x) {bridge.get_xchain_status(x)
                                                           .then(setTrxData)
                                                           .then(() => setError(null))
