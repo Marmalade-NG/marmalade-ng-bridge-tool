@@ -1,7 +1,7 @@
 {
   "name": "marmalade-ng-bridge-dapp",
   "private": true,
-  "version": "0.1.01",
+  "version": "0.1.02",
   "type": "module",
   "scripts": {
     "genversion": "genversion --es6 src/version.js",

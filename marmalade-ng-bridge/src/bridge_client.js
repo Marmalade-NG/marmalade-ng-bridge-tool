@@ -310,7 +310,7 @@ class MarmaladeNGBridgeClient
       case "V1-NG":
         return `(${this.bridge_mod}.bridge-v1-to-ng ${src.ledger} ${src.helper} "${src.token}" "${dst.token}" "${account}" ${str_am(amount)})`
       case "GENERIC-NG":
-        return `(${this.bridge_mod}.bridge-generic-to-ng ${src.ledger} ${dst.ledger} "${src.token}" "${dst.token})`
+        return `(${this.bridge_mod}.bridge-generic-to-ng ${src.ledger} ${dst.ledger} "${src.token}" "${dst.token}")`
       default:
         throw Error("Unknown bridge type");
     }
@@ -326,10 +326,13 @@ class MarmaladeNGBridgeClient
                   .execution(this.transaction_code(data))
                   .setMeta({sender:_gas_account, chainId:src.chain, gasLimit:BRIDGE_GAS_LIMIT})
                   .setNetworkId(this.#network)
-                  .addSigner(__to_key(_gas_guard), (withCapability) => [withCapability('coin.GAS')])
+
 
     if(src.type == "V1" || src.type=="NG")
       cmd = cmd.addSigner(__to_key(guard), (withCapability) => [withCapability(`${src.ledger}.BURN`, src.token, account, pact_am(amount) )])
+               .addSigner(__to_key(_gas_guard), (withCapability) => [withCapability('coin.GAS')]);
+    else
+      cmd = cmd.addSigner(__to_key(guard));
 
     return cmd.createTransaction()
 
